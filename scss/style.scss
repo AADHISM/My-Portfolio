@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Raleway:wght@100;200;300;400;500&display=swap");
+
+$primary-color: #00ad82;
+$primary-color-light: #16c79a;
+$primary-color-dark: #008161;
+
+$secondary-color-light: #6a99ff;
+$secondary-color-dark: #0050ff;
+
+$dark-color: #333;
+$light-color: #f4f4f4;
+
+$primary-font: "Raleway", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+
+$website-width: 1280px;
+
+::selection {
+  background-color: $primary-color;
+  color: $light-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+
+@import "navbar";
+@import "sections";
+@import "utilities";
+
+// Media Queries
+@media (min-width: 2560px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about .lead {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .work {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 37.5%;
+  }
+}
