@@ -78,8 +78,9 @@ a {
   }
   
   footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
   }
 }
