@@ -14,8 +14,8 @@ $secondary-font: "Montserrat", sans-serif;
 $website-width: 1280px;
 
 ::selection {
-  background-color: $primary;
-  color: $light-color;
+  background-color: $secondary;
+  color: $primary;
 }
 
 * {
