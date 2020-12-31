@@ -1,4 +1,6 @@
 .navbar {
+  height: fit-content;
+  min-height: 12rem;
   background-color: $primary;
   display: flex;
   padding: 2rem;
