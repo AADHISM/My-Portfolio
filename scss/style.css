@@ -202,6 +202,7 @@ a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 50vh;
   text-align: center;
   padding-top: 2rem;
 }
