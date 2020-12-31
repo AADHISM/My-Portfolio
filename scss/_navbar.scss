@@ -1,0 +1,30 @@
+.navbar {
+  background-color: $primary;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  animation: slideInFromTop 2s;
+
+  & ul {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.6rem;
+
+    & li {
+      & a {
+        color: $light-color;
+        padding: 1rem;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $dark-color;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
