@@ -39,6 +39,8 @@ a:hover {
 }
 
 .navbar {
+  height: fit-content;
+  min-height: 12rem;
   background-color: #ef476f;
   display: -webkit-box;
   display: -ms-flexbox;
